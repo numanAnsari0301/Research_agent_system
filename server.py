@@ -25,7 +25,7 @@ app = FastAPI(title="Research Desk API")
 ALLOWED_ORIGINS = [
     o.strip()
     for o in os.getenv(
-        "ALLOWED_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173"
+        "ALLOWED_ORIGINS", "https://research-agent-system.vercel.app/"
     ).split(",")
     if o.strip()
 ]
