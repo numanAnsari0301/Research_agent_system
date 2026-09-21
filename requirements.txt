@@ -1,0 +1,30 @@
+# Core LangChain / LCEL
+langchain
+langchain-core
+langchain-openai
+langchain_google_genai
+
+# ReAct / agent orchestration
+langgraph
+
+# Tavily web-search tool
+langchain-tavily
+
+# Web scraping with BeautifulSoup
+beautifulsoup4
+requests
+
+# Environment variables (.env / API keys)
+python-dotenv
+
+# Data validation / schemas commonly used by tools and agents
+pydantic
+
+# Optional: useful for async HTTP requests in multi-agent workflows
+httpx
+tavily
+rich
+
+#UI
+fastapi 
+uvicorn
