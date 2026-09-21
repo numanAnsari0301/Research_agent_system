@@ -23,9 +23,10 @@ app = FastAPI(title="Research Desk API")
 # Comma-separated list of allowed frontend URLs. Set ALLOWED_ORIGINS on your host, e.g.
 #   ALLOWED_ORIGINS=https://research-desk.vercel.app
 ALLOWED_ORIGINS = [
-    o.strip()
+    o.strip().rstrip("/")
     for o in os.getenv(
-        "ALLOWED_ORIGINS", "https://research-agent-system.vercel.app/"
+        "ALLOWED_ORIGINS",
+        "http://localhost:5173"
     ).split(",")
     if o.strip()
 ]
